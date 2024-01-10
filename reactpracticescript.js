@@ -23,7 +23,7 @@ function Product() {
               Reactive Accelerator Course
             </h3>
           </a>
-          <span id="total" className="text-xl font-medium text-teal-500">
+          <span className="text-xl font-medium text-teal-500">
             {quantity * productPrice}
           </span>
         </div>
@@ -44,4 +44,9 @@ function Product() {
   );
 }
 
-ReactDOM.createRoot(document.getElementById("root")).render(<Product />);
+ReactDOM.createRoot(document.getElementById("root")).render(
+  <>
+    <Product />
+    <Product />
+  </>
+);
